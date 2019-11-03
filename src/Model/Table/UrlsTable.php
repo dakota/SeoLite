@@ -21,7 +21,7 @@ class UrlsTable extends Table
 
     public function initialize(array $config)
     {
-        $this->table('urls');
+        $this->getTable('urls');
         $this->addBehavior('Croogo/Core.Trackable');
         $this->addBehavior('Seolite.CustomFields');
         $this->addBehavior('Croogo/Meta.Meta');
